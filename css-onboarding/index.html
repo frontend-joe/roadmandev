@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Page Title</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div>
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <i class="uil uil-ellipsis-v"></i>
+              <img class="avatar" src="logo.svg" />
+              <h3>Step One</h3>
+              <h2>Who you are</h2>
+              <input type="text" placeholder="Enter Your Name" />
+            </div>
+            <div class="swiper-slide">
+              <img class="avatar" src="logo2.svg" />
+              <h3>Step Two</h3>
+              <h2>Your Security</h2>
+              <input type="text" placeholder="Enter A Password" />
+            </div>
+            <div class="swiper-slide">
+              <img class="avatar" src="logo3.svg" />
+              <h3>Finally</h3>
+              <h2>Confirm Details</h2>
+              <input type="text" placeholder="Join Now" />
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+          <div class="app-button-wrapper">
+            <button class="app-button apple">
+              <img src="apple.svg" />
+              <span>
+                <span> Download on the </span>
+                <span> App Store </span>
+              </span>
+            </button>
+            <button class="app-button google">
+              <img src="google.svg" />
+              <span>
+                <span> GET IT ON </span>
+                <span> Google Play </span>
+              </span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper(".swiper", {
+        pagination: {
+          el: ".swiper-pagination",
+        },
+      });
+    </script>
+  </body>
+</html>

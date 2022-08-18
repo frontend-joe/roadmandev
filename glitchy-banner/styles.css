@@ -1,0 +1,67 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --animate-duration: 0.8s;
+  --animate-delay: 0.4s;
+}
+
+body {
+  margin: 0;
+  font-family: "Euclid Circular A";
+}
+
+.banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 26rem;
+  padding: 0 20%;
+  background: #1a1a1a;
+}
+
+.page {
+  padding: 3rem 0 0;
+  margin: 0 20%;
+}
+
+@keyframes glitch {
+  0%, 30%, 34%, 100% { background-image: url("joe-normal.png"); }
+  30.5% { background-image: url("joe-glitch-1.png"); }
+  31% { background-image: url("joe-glitch-2.png"); }
+  31.5% { background-image: url("joe-glitch-3.png"); }
+}
+
+.banner .img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background-image: url("joe-normal.png");
+  background-size: cover;
+  animation: glitch 5s infinite steps(1);
+}
+
+.banner h2 {
+  font-size: 48px;;
+  color: #f9f9f9;
+  margin: 0 0 0.5rem;
+}
+
+.banner h3 {
+  color: rgba(255, 255, 255, 0.6);
+  margin: 0;;
+}
+
+h2 {
+  margin: 0 0 3rem;
+}
+
+h3 {
+  margin: 0 0 2rem;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.757;
+}
